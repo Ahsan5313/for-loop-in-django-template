@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Contact Page
+
+{% endblock title %}
+
+
+
+{% block content %}
+
+
+{% include 'contactSlide.html' %}
+
+<h4>Email : {{email}} </h4>
+<h4>Email2 : {{email2}} </h4>
+
+<ul class='list'>
+
+{% for main in address %}
+
+<li class='list-item'>{{main}}</li>
+
+{% endfor %}
+
+</ul>
+
+<h1 class='text-center'>This is our contact page </h1>
+
+
+{% endblock content %}

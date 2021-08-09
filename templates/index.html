@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% include 'slide.html' %}
+
+<h1 class='text-center'>This is home page</h1>
+
+  <p>Name: {{name}}</p><br>
+  <p>Age: {{age}}</p><br>
+  <p>Phone: {{phone}}</p>
+  
+  <ul class='list'>
+   {% for all_name in all_list  %}
+   
+   <li class='list-item'>{{all_name}}</li>
+   
+   {% endfor %}
+  </ul>
+
+{% endblock content %}
